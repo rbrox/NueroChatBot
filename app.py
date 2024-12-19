@@ -86,7 +86,7 @@ def generate_report():
 
     # Generate summary using Groq
     messages = [
-        {"role": "system", "content": "You are a psychiatrist summarizing a conversation."},
+        {"role": "system", "content": "You are a psychiatrist summarizing a conversation. You want to outline the things that were noted, new insights on subject and final impressions and plan for improvement."},
         {"role": "user", "content": f"Summarize the following conversation:\n{conversation_history}"},
     ]
 
